@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: ghostwhite;
+  display: flex;
+}
+
+.menu ul{
+  list-style-type: none;
+}
+
+.menu ul li a{
+  text-decoration: none;
+}
+
+footer{
+  background-color: dimgrey;
+  text-align: center;
+  padding: 10px 0px 0px 10px;
+}
+
+/*--------------------- 画面サイズが大きいとき ---------------------------*/
+@media screen and (min-width: 601px){
+  .title-logo{
+    width: 100%;
+    text-align: left;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+  .menu ul{
+    display: flex;
+    width: auto;
+  }
+  
+  .menu ul li{
+    font-size: 20px;
+    padding-right: 15px;
+  }
+
+  .menu ul li a{
+    color: coral;
+  }
+
+  .menu ul li a:hover{
+    border-bottom: 3px dotted skyblue;
+  }
+
+  .about-image{
+    width: 100%;
+    opacity: 0.7;
+    position: relative;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+  @keyframes fade {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 0.7;
+    }
+  }
+
+  .profile{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+  }
+
+  .profile h1{
+    font-family: serif;
+    font-weight: bold;
+    font-size: 60px;
+  }
+
+  .myabout{
+    display: flex;
+    margin-top: 5px;
+  }
+
+  .about{
+    margin: 0px 5% 10% 5%;
+    padding: 10px;
+    width: 40%;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+  }
+
+  .about h1{
+    text-align: center;
+    font-family: serif;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+  }
+
+  .about p{
+    font-size: large;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-bottom: 3px dotted yellow;
+  }
+}
+
+/*-------------------------------- 画面サイズが小さいとき--------------------------*/
+@media screen and (max-width: 600px){
+  .title-logo{
+    width: 40%;
+    text-align: left;
+    font-family: serif;
+    font-weight: bold;
+  }
+
+  .ham{
+    cursor: pointer;
+    position: relative;
+    width: 50%;
+    height: 40px;
+    text-align: right;
+  }
+
+  .line{
+    position: absolute;
+    width: 10%;
+    height: 3px;
+    background-color: #000;
+    transition: ease 0.5s;
+  }
+
+  .top{
+    top: 10px;
+  }
+
+  .middle{
+    top: 17px;
+  }
+
+  .bottom{
+    top: 24px;
+  }
+
+  .close .top{
+    transform: rotate(45deg);
+    top: 20px;
+  }
+
+  .close .middle{
+    opacity: 0;
+  }
+
+  .close .bottom{
+    transform: rotate(-45deg);
+    top: 20px;
+  }
+
+  .menu{
+    position: fixed;
+    top: 55px;
+    width: 100%;
+    height: 100%;
+    right: -600px;
+    background-color: palegoldenrod;
+    transition: ease 0.5s;
+  }
+
+  .close .menu{
+    right: 0px;
+  }
+
+  ul li{
+    text-align: center;
+    padding-top: 10%;
+  }
+
+  ul li a{
+    font-size: 2em;
+    font-family: 'Kaiti SC',sans-serif;
+    font-weight: bold;
+    color: black;
+    border-bottom: 1px solid black;
+  }
+
+  .about-image{
+    width: 100%;
+    opacity: 0.6;
+    position: relative;
+  }
+
+  .delete{
+    display: none;
+  }
+
+  .profile{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+
+  .profile h1{
+    font-family: serif;
+    font-weight: bold;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 0.6;
+    }
+  }
+
+/*---------自己紹介----*/
+  .about{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px 25px 5px 25px;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  .about h1{
+    text-align: center;
+    font-family: serif;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+  }
+
+  .about p{
+    padding-top: 5px;
+    border-bottom: 3px dotted yellow;
+  }
+}

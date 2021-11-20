@@ -10,29 +10,55 @@
   <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 <body>
-  <header class="py-2 container-fluid">
-    <h2 class="title-logo">Daigo Ikeda</h2>
-    <div class="ham" id="hamMenu">
-      <span class="line top"></span>
-      <span class="line middle"></span>
-      <span class="line bottom"></span>
-    </div>
-    <div class="menu_wrapper" id="menu_wrapper">
-      <div class="menu">
-        <ul>
-          <li><a href="abouts.html">ABOUT</a></li>
-          <li><a href="work.html">WORK</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
+  <div class="wrapper">
+    <header class="py-2 container-fluid">
+      <h2 class="title-logo">Daigo Ikeda</h2>
+      <div class="ham" id="hamMenu">
+        <span class="line top"></span>
+        <span class="line middle"></span>
+        <span class="line bottom"></span>
       </div>
-    </div>
-  </header>
-  <article id="Image">
-    <h1>Contact</h1>
-  </article>
-  <footer id="footer">
-    <span class="copy">&copy2021 DaigoIkeda</span>
-  </footer>
+      <div class="menu_wrapper" id="menu_wrapper">
+        <div class="menu">
+          <ul>
+            <li><a href="abouts.html">ABOUT</a></li>
+            <li><a href="work.html">WORK</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <article class="container offset-1 col-10 offset-1" id="Image">
+      <h1 class="pt-3 text-center">お問合せフォーム</h1>
+      <div class="form">
+        <form class="offset-md-3 col-md-6 offset-md-3">
+          <div class="pb-3 row name">
+              <label for="name" class="col-md-5">氏名:</label>
+              <input type="text" class="col-md-9 form-control" name="name" />
+          </div>
+          <div class="pb-3 row name">
+            <label for="name" class="col-md-5">メールアドレス:</label>
+            <input type="email" class="col-md-9 form-control" name="name" />
+          </div>
+          <div class="pb-3 row name">
+            <label for="name" class="col-md-6">お問い合わせ内容:</label>
+            <textarea class="col-md-9 form-control" name="name"></textarea>
+          </div>
+          <div class="col-3 my-4">
+              <button type="submit" class="btn btn-outline-success">送信</button>
+          </div>
+        </form>
+      </div>
+      <div class="row my-3 text-center">
+        <h1>その他お問合せ</h1>
+        <div class="col-md-6 icon"><a href="https://twitter.com/23i742D5"><i class="fab fa-twitter fa-2x">Twitter</i></a></div>
+        <div class="col-md-6 icon"><a href=""><i class="fab fa-instagram fa-2x">Instagram</i></a></div>
+      </div>
+    </article>
+    <footer id="footer">
+      <span class="copy">&copy2021 DaigoIkeda</span>
+    </footer>
+  </div>
   <script type="text/javascript" src="index.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>

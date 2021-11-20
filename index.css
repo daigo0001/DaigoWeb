@@ -9,6 +9,12 @@ header{
   display: flex;
 }
 
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .menu ul{
   list-style-type: none;
 }
@@ -16,10 +22,48 @@ header{
 .menu ul li a{
   text-decoration: none;
 }
+.work-menu{
+  margin-top: 20px;
+  text-align: center;
+  font-family: serif;
+}
+
+.mail-link{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1{
+  font-family: serif;
+  font-weight: bold;
+}
+
+.mail-link a{
+  padding: 20px;
+  border: 2px solid rgb(192, 238, 86) ;
+  box-shadow: 0 0 6px 0 rgba(165, 235, 168, 0.5);
+  transition: 0.2s;
+}
+
+.mail-link a:hover{
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px);
+}
+
+.form {
+  border: 2px solid skyblue;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.icon{
+  width: 40%;
+}
 
 footer{
   background-color: dimgrey;
   text-align: center;
+  margin-top: auto;
   padding: 10px 0px 0px 10px;
 }
 
@@ -59,6 +103,13 @@ footer{
     animation-duration: 1s;
   }
 
+  .work-menu{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 100px;
+  }
+
   @keyframes fade {
     0%{
       opacity: 0;
@@ -75,8 +126,6 @@ footer{
   }
 
   .profile h1{
-    font-family: serif;
-    font-weight: bold;
     font-size: 60px;
   }
 
@@ -95,7 +144,6 @@ footer{
 
   .about h1{
     text-align: center;
-    font-family: serif;
     font-size: 30px;
     border-bottom: 1px solid black;
   }
@@ -105,6 +153,37 @@ footer{
     padding-left: 20px;
     padding-top: 10px;
     border-bottom: 3px dotted yellow;
+  }
+
+  .work{
+    display: flex;
+  }
+
+  .work h1{
+    margin-top: 5%;
+  }
+
+  .work .about{
+    margin-top: 20px;
+  }
+
+  .work .about a{
+    text-decoration: none;
+  }
+
+  .work .about p{
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0;
+    border: 2px solid rgb(192, 238, 86) ;
+    box-shadow: 0 0 6px 0 rgba(165, 235, 168, 0.5);
+    transition: 0.2s;
+  }
+
+  .work .about p:hover{
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
   }
 }
 
@@ -203,8 +282,6 @@ footer{
   }
 
   .profile h1{
-    font-family: serif;
-    font-weight: bold;
     animation-name: fade;
     animation-duration: 1.5s;
   }
@@ -228,8 +305,6 @@ footer{
     margin-bottom: 30px;
   }
   .about h1{
-    text-align: center;
-    font-family: serif;
     font-size: 30px;
     border-bottom: 1px solid black;
   }
@@ -237,5 +312,32 @@ footer{
   .about p{
     padding-top: 5px;
     border-bottom: 3px dotted yellow;
+  }
+
+  /*-------WORKページ------*/
+  .work h1{
+    margin-top: 5%;
+  }
+
+  .work .about{
+    margin-top: 20px;
+  }
+
+  .work .about a{
+    text-decoration: none;
+  }
+
+  .work .about p{
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+    border: 2px solid rgb(192, 238, 86) ;
+    box-shadow: 0 0 6px 0 rgba(165, 235, 168, 0.5);
+    transition: 0.2s;
+  }
+
+  .work .about p:hover{
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
   }
 }

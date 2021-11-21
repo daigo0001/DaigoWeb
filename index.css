@@ -51,6 +51,10 @@ h1{
   transform: translateY(-10px);
 }
 
+.about p{
+  border-bottom: 3px double rgba(42, 43, 42, 0.192);
+}
+
 .form {
   border: 2px solid skyblue;
   padding: 20px;

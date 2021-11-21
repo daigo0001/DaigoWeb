@@ -10,7 +10,7 @@
   }
 
   .fade-in-top{
-    transform: translate(0, 50px);
+    transform: translate(0, -50px);
   }
 
   .fade-in-left{
@@ -22,7 +22,7 @@
   }
 
   .fade-in-bottom{
-    transform: translate(50px, 0);
+    transform: translate(0, 50px);
   }
 
   .scroll-in{

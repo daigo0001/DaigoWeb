@@ -3,6 +3,7 @@
 }
 
 @media screen and (max-width: 600px){
+
   .fade-in{
     opacity: 0;
     transition-duration: 500ms;

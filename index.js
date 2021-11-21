@@ -12,6 +12,9 @@ ham.addEventListener('click', function(){
   menu_wrapper.classList.toggle('close');
 });
 
+window.addEventListener('load',() => {
+  fadeInTarget[0].classList.add('scroll-in');
+})
 //スクロールイベント
 window.addEventListener('scroll', () => {
   for(let i = 0; i < fadeInTarget.length; i++){

@@ -1,0 +1,32 @@
+@media screen and (min-width: 601px){
+  
+}
+
+@media screen and (max-width: 600px){
+  .fade-in{
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity, transform;
+  }
+
+  .fade-in-top{
+    transform: translate(0, 50px);
+  }
+
+  .fade-in-left{
+    transform: translate(-50px, 0);
+  }
+
+  .fade-in-right{
+    transform: translate(50px, 0);
+  }
+
+  .fade-in-bottom{
+    transform: translate(50px, 0);
+  }
+
+  .scroll-in{
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}

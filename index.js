@@ -4,6 +4,7 @@ const menu_wrapper = document.getElementById('menu_wrapper');
 const footer = document.getElementById('footer');
 let fadeInTarget = document.querySelectorAll('.fade-in');
 
+//ハンバーガーメニュー
 ham.addEventListener('click', function(){
   ham.classList.toggle('close');
   image.classList.toggle('delete');
@@ -11,6 +12,7 @@ ham.addEventListener('click', function(){
   menu_wrapper.classList.toggle('close');
 });
 
+//スクロールイベント
 window.addEventListener('scroll', () => {
   for(let i = 0; i < fadeInTarget.length; i++){
     //見えているブラウザの上端から、i番目の要素までの距離
@@ -28,3 +30,16 @@ window.addEventListener('scroll', () => {
     }
   }
 });
+
+const pics_src = ["images/prof.jpeg", "images/image1.jpg", "images/image2.jpg", "images/image3.jpg"];
+let num = -1;
+function slideshow_timer(){
+  if(num === 2){
+    num = 0;
+  }else {
+    num++;
+  }
+  document.getElementById("mypic").src = pics_src[num];
+  document.classList.toggle('about-image');
+}
+setInterval(slideshow_timer, 2000);

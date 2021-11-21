@@ -41,8 +41,7 @@ h1{
 
 .mail-link a{
   padding: 20px;
-  border: 2px solid rgb(192, 238, 86) ;
-  box-shadow: 0 0 6px 0 rgba(165, 235, 168, 0.5);
+  border: 4px double rgba(42, 43, 42, 0.192);
   transition: 0.2s;
 }
 
@@ -157,7 +156,7 @@ footer{
     font-size: large;
     padding-left: 20px;
     padding-top: 10px;
-    border-bottom: 3px dotted yellow;
+    border-bottom: 3px double rgba(42, 43, 42, 0.192);
   }
 
   .work{
@@ -181,8 +180,7 @@ footer{
     text-align: center;
     margin-top: 10px;
     padding: 0;
-    border: 2px solid rgb(192, 238, 86) ;
-    box-shadow: 0 0 6px 0 rgba(165, 235, 168, 0.5);
+    border: 3px double rgba(42, 43, 42, 0.192);
     transition: 0.2s;
   }
 
@@ -339,8 +337,7 @@ footer{
     list-style: none;
     margin-top: 10px;
     padding: 0;
-    border: 2px solid rgb(192, 238, 86) ;
-    box-shadow: 0 0 6px 0 rgba(165, 235, 168, 0.5);
+    border: 3px double rgba(42, 43, 42, 0.192);
     transition: 0.2s;
   }
 

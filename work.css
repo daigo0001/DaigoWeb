@@ -6,24 +6,25 @@
 
   .fade-in{
     opacity: 0;
-    transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-duration: 1s;
     transition-property: opacity, transform;
   }
 
   .fade-in-top{
-    transform: translate(0, -50px);
+    transform: translateY(-100px);
   }
 
   .fade-in-left{
-    transform: translate(-50px, 0);
+    transform: translateX(-100px);
   }
 
   .fade-in-right{
-    transform: translate(50px, 0);
+    transform: translateX(100px);
   }
 
   .fade-in-bottom{
-    transform: translate(0, 50px);
+    transform: translateY(50px);
   }
 
   .scroll-in{
